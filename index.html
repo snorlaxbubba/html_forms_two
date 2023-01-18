@@ -41,38 +41,41 @@
       
         <fieldset class="field-one">
 
-          <legend>
+          <legend id="account-heading">
               <span class="number">1</span> Account Info
           </legend>
 
           <section class="section">
 
-            <label for="name">Name:</label>
+            <label for="name" class="sr-only">Name:</label>
             <br />
             <input 
               type="text" 
               id="name" 
-              class="text-width"
+              class="text-width account-info"
+              placeholder="Full Name..."
               required 
             />
             <br />
 
-            <label for="email">Email:</label>
+            <label for="email" class="sr-only">Email:</label>
             <br />
             <input 
               type="email" 
               id="email" 
-              class="text-width"
+              class="text-width account-info"
+              placeholder="Email Address..."
               required 
             />
             <br />
 
-            <label for="password">Password:</label>
+            <label for="password" class="sr-only">Password:</label>
             <br />
               <input 
               type="password"
               id="password" 
-              class="text-width" 
+              class="text-width account-info" 
+              placeholder="Password... min 8 chars"
               required 
             />
           </section>
@@ -88,7 +91,7 @@
 
           <section class="section">
             
-            <label for="language">Programming Languages</label>
+            <label for="language" class="heading">Programming Languages</label>
             <br>
 
             <div class="display-flex">
@@ -104,6 +107,11 @@
               </article>
 
               <article>
+                <input type="checkbox" id="sass" name="language" value="sass">
+                <label for="sass">Sass</label>
+              </article>
+
+              <article class="left-button">
                 <input type="checkbox" id="javascript" name="language" value="javascript">
                 <label for="javascript">Javascript</label>
               </article>
@@ -112,17 +120,47 @@
                 <input type="checkbox" id="php" name="language" value="php">
                 <label for="php">PHP</label>
               </article>
+
+              <article>
+                <input type="checkbox" id="python" name="language" value="python">
+                <label for="python">Python</label>
+              </article>
               
             </div>
         </section>
+
+        <section class="section">
+            
+          <label for="dev" class="heading">Dev Ops</label>
+          <br>
+
+          <div class="display-flex">
+
+            <article class="left-button">
+              <input type="checkbox" id="git" name="dev" value="git">
+              <label for="git">GIT</label>
+            </article>
+
+            <article>
+              <input type="checkbox" id="gulp" name="dev" value="gulp">
+              <label for="gulp">Gulp</label>
+            </article>
+
+            <article>
+              <input type="checkbox" id="webpack" name="dev" value="webpack">
+              <label for="webpack">Webpack</label>
+            </article>
+            
+          </div>
+      </section>
+
         </fieldset>
 
         <fieldset >
           <legend><span class="number">3</span> Experience</legend>
 
           <section class="section">
-          <label for="experience">Overall Experience</label>
-          <br>
+
           <div class="display-flex">
 
             <article class="left-button">
@@ -146,7 +184,7 @@
         <fieldset>
           <legend><span class="number">4</span> Other</legend>
           <section class="section">
-          <label for="hear">How did you hear about us?</label>
+          <label for="hear" class="heading">How did you hear about us?</label>
           <br />
 
           <select name="hear" id="hear" class="text-width please-select" >
@@ -173,7 +211,7 @@
           </select>
 
           <br />
-          <label for="comments">Comments</label>
+          <label for="comments" class="heading">Comments</label>
           <br />
           <textarea name="comments" id="comments" cols="30" rows="10" class="text-width"></textarea>
         </section>
