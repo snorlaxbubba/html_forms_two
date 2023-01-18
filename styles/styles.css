@@ -10,7 +10,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+/* Typogrophy */
 h1,
 h2,
 h3,
@@ -22,6 +22,7 @@ legend,
   font-weight: 1000;
 }
 
+/* Screen Reader Class to hide form labels */
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
@@ -36,12 +37,14 @@ legend,
   white-space: nowrap !important;
 }
 
+/* main body */
 body {
   background: rgb(225,231,239);
   background: linear-gradient(0deg, #f93116 0%, #fec751 100%); 
   background-repeat: no-repeat;
 }
 
+/* main form */
 form {
   background-color: white;
   max-width: 480px;
@@ -62,6 +65,7 @@ legend {
   margin: 1rem 0;
 }
 
+/* input text fields */
 .text-width {
   width: 100%;
   margin-bottom: 1rem;
@@ -75,6 +79,7 @@ legend {
   border: 3px solid #fec751;
 }
 
+/* display flex on check mark buttons */
 .display-flex {
   display: grid;
   grid-template-columns: 125px 125px 125px;
@@ -104,6 +109,7 @@ legend {
   font-weight: 1500;
 }
 
+/* heading numbers */
 .number {
   display: inline-block;
   text-align: center;
@@ -120,17 +126,19 @@ legend {
   margin-left: -0.75rem;
 }
 
+/* left radio/check marks */
 .left-button {
   margin-left: -0.25rem;
 }
 
 
-
+/* options */
 .please-select {
   padding: 0.5rem;
   color: #939fa7
 }
 
+/* submit button */
 #submit {
   margin-top: -1.5rem;
   color: white;
@@ -142,6 +150,7 @@ legend {
   border: none;
 }
 
+/* clear form button */
 #clear {
   margin-top: 1.5rem;
   color: #ff0000;
