@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+
+    <main>
+      <form action="#" method="POST">
+        <legend class="signUp">Signup</legend>
+        <fieldset class="field-one">
+
+          <legend><span class="number">1</span> Account Info</legend>
+
+          <section class="section">
+            <label for="name">Name:</label>
+            <br />
+            <input type="text" id="name" required class="text-width"/>
+            <br />
+
+            <label for="email">Email:</label>
+            <br />
+            <input type="email" id="email" required class="text-width"/>
+            <br />
+
+            <label for="password">Password:</label>
+            <br />
+            <input type="password" id="password" required class="text-width"/>
+          </section>
+
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="number">2</span> Dev Skills</legend>
+
+          <section class="section">
+            <label for="language">Programming Languages</label>
+            <br>
+
+            <div class="display-flex">
+
+              <article class="left-button">
+                <input type="checkbox" id="html" name="language" value="html">
+                <label for="html">HTML</label>
+              </article>
+
+              <article>
+                <input type="checkbox" id="css" name="language" value="css">
+                <label for="css">CSS</label>
+              </article>
+
+              <article>
+                <input type="checkbox" id="javascript" name="language" value="javascript">
+                <label for="javascript">Javascript</label>
+              </article>
+            
+              <article>
+                <input type="checkbox" id="php" name="language" value="php">
+                <label for="php">PHP</label>
+              </article>
+              
+            </div>
+        </section>
+        </fieldset>
+
+        <fieldset >
+          <legend><span class="number">3</span> Experience</legend>
+
+          <section class="section">
+          <label for="experience">Overall Experience</label>
+          <br>
+          <div class="display-flex">
+
+            <article class="left-button">
+              <input type="radio" name="experience" id="beginner" value="beginner">
+              <label for="beginner">Beginner</label>
+            </article>
+
+            <article>
+              <input type="radio" name="experience" id="intermediate" value="intermediate">
+              <label for="intermediate">Intermediate</label>
+            </article>
+
+            <article>
+              <input type="radio" name="experience" id="advanced" value="advanced">
+              <label for="advanced">Advanced</label>
+            </article>
+          <div>
+          </section>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="number">4</span> Other</legend>
+          <section class="section">
+          <label for="hear">How did you hear about us?</label>
+          <br />
+
+          <select name="hear" id="hear" class="text-width please-select" >
+          <option value="" selected class="please-select">Please Select...</option>
+
+
+            <optgroup label="Person">
+              <option value="friend">Friend</option>
+              <option value="family">Family</option>
+              <option value="colleague">Colleague</option>
+            </optgroup>
+
+            <optgroup label="Media">
+              <option value="internet">Internet</option>
+              <option value="radio">Radio</option>
+              <option value="tv">TV</option>
+              <option value="newspaper">Newspaper</option>
+            </optgroup>
+
+            <optgroup label="Other">
+              <option value="magic">Magic!</option>
+              <option value="other">Other...</option>
+            </optgroup>
+          </select>
+
+          <br />
+          <label for="comments">Comments</label>
+          <br />
+          <textarea name="comments" id="comments" cols="30" rows="10" class="text-width"></textarea>
+        </section>
+        </fieldset>
+
+        <input type="submit" value="Submit" id="submit">
+        <br />
+        <input type="reset" value="Clear Form" id="clear">
+
+        </form>
+    </main>
+  </body>
+</html>
