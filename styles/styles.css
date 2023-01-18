@@ -3,7 +3,7 @@
 /* Box Sizing Reset */
 html {
   box-sizing: border-box;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 800
 }
 *, *:before, *:after {
@@ -12,7 +12,7 @@ html {
 
 body {
   background: rgb(225,231,239);
-  background: linear-gradient(0deg, rgba(225,231,239,1) 0%, rgba(0,212,255,1) 100%); 
+  background: linear-gradient(0deg, #f93116 0%, #fec751 100%); 
   background-repeat: no-repeat;
 }
 
@@ -44,6 +44,11 @@ legend {
   padding: .5rem;
 }
 
+.text-width:focus {
+  background-color: white;
+  border: 3px solid #fec751;
+}
+
 .display-flex {
   display: flex;
   justify-content: space-between;
@@ -55,7 +60,7 @@ legend {
   padding-bottom: .3rem;
   max-width: 6rem;
   text-shadow: black 1px;
-  border-bottom: 3px solid #052f63 ;
+  border-bottom: 3px solid #153c6d;
   line-height: 2rem;
   font-size: 2em;
   font-weight: 1500;
@@ -67,7 +72,7 @@ legend {
   line-height: 2.2rem;
   width: 35px;
   height: 35px;
-  background-color:  #5fce80;
+  background-color:  #153c6d;
   border-radius: 50%;
   color: white;
   font-size: small;
@@ -91,12 +96,13 @@ legend {
   padding: .75rem;
   width: 100%;
   border-radius: 5px;
-  background-color: #5fce80;
+  background-color: #153c6d;
   border: none;
 }
 
 #clear {
   margin-top: 1.5rem;
+  color: #ff0000;
   border-radius: 5px;
   width: 100%;
   padding: 0.75rem;
