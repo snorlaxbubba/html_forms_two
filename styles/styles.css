@@ -4,10 +4,36 @@
 html {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-weight: 600
+  font-weight: 600;
+
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend, 
+.heading {
+  font-weight: 1000;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
 }
 
 body {
@@ -50,8 +76,20 @@ legend {
 }
 
 .display-flex {
-  display: flex;
+  display: grid;
+  grid-template-columns: 125px 125px 125px;
   justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.account-info {
+  padding: 0.5rem;
+  margin-bottom: -1rem;
+}
+
+#account-heading {
+  margin-bottom: -1rem;
 }
 
 .signUp {
@@ -59,7 +97,7 @@ legend {
   margin-bottom: 1rem;
   padding-bottom: .3rem;
   max-width: 6rem;
-  text-shadow: black 1px;
+  text-shadow: 1px 1px 1px black;
   border-bottom: 3px solid #153c6d;
   line-height: 2rem;
   font-size: 2em;
@@ -86,6 +124,8 @@ legend {
   margin-left: -0.25rem;
 }
 
+
+
 .please-select {
   padding: 0.5rem;
   color: #939fa7
@@ -93,6 +133,8 @@ legend {
 
 #submit {
   margin-top: -1.5rem;
+  color: white;
+  font-weight: 600;
   padding: .75rem;
   width: 100%;
   border-radius: 5px;
